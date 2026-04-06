@@ -14,16 +14,25 @@ function carregarProdutos() {
             <img src="${produto.imagem}" alt="${produto.nome}">
             <h3>${produto.nome}</h3>
             <p class="preco" style="color: #28a745; text-transform: uppercase;">Disponível</p>
-            <button class="btn-encomendar" onclick="encomendar('${produto.nome}')">
-                Encomendar
-            </button>
         `;
+        
+        const btn = document.createElement('button');
+        btn.className = 'btn-encomendar';
+        btn.textContent = 'Encomendar';
+        btn.onclick = () => encomendar(produto.nome);
+        
+        card.appendChild(btn);
         container.appendChild(card);
     });
 }
 
 function encomendar(nomeProduto) {
-    const mensagem = `Olá! Quero encomendar o perfume ${nomeProduto}.`;
+    let mensagem = `Olá! Quero encomendar o perfume ${nomeProduto}.`;
+    
+    if (nomeProduto.includes('Hidratante')) {
+        mensagem = `Olá! Quero encomendar o ${nomeProduto}.`;
+    }
+    
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }

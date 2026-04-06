@@ -12,8 +12,8 @@ body.tema-escuro {
     --white: #2D2424; 
 }
 
-body.tema-escuro .logo,
-body.tema-escuro .link-social img {
+/* Agora APENAS a logo da KR Imports fica branca no modo escuro */
+body.tema-escuro .logo {
     filter: brightness(0) invert(1);
 }
 

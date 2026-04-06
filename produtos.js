@@ -5,118 +5,118 @@ const produtosData = [
     {
         "nome": "Asad Lattafa",
         "preco": "R$ 250,00",
-        "imagem": "asad.png"
+        "imagem": "perfumes/asad.png"
     },
     {
         "nome": "Asad Elixir",
         "preco": "R$ 250,00",
-        "imagem": "elixir.webp"
+        "imagem": "perfumes/elixir.webp"
     },
     {
         "nome": "Asad Bourbon",
         "preco": "Disponível",
-        "imagem": "asad-bourbon.png"
+        "imagem": "perfumes/asad-bourbon.png"
     },
 
     // Linha Yara (Lattafa)
     {
         "nome": "Yara Tradicional",
         "preco": "Disponível",
-        "imagem": "yara-tradicional.png"
+        "imagem": "perfumes/yara-tradicional.png"
     },
     {
         "nome": "Yara Elixir",
         "preco": "Disponível",
-        "imagem": "yara-elixir.png"
+        "imagem": "perfumes/yara-elixir.png"
     },
 
     // Linha Fakhar (Lattafa)
     {
         "nome": "Fakhar Black",
         "preco": "Disponível",
-        "imagem": "fakhar-black.png"
+        "imagem": "perfumes/fakhar-black.png"
     },
     {
         "nome": "Fakhar Rose",
         "preco": "Disponível",
-        "imagem": "fakhar-rose.png"
+        "imagem": "perfumes/fakhar-rose.png"
     },
     {
         "nome": "Fakhar Gold",
         "preco": "Disponível",
-        "imagem": "fakhar-gold.png"
+        "imagem": "perfumes/fakhar-gold.png"
     },
     {
         "nome": "Fakhar Platin",
         "preco": "Disponível",
-        "imagem": "fakhar-platin.png"
+        "imagem": "perfumes/fakhar-platin.png"
     },
 
     // Linha Club de Nuit (Armaf)
     {
         "nome": "Club de Nuit Intense Man",
         "preco": "Disponível",
-        "imagem": "club-de-nuit-intense-man.png"
+        "imagem": "perfumes/club-de-nuit-intense-man.png"
     },
     {
         "nome": "Club de Nuit Urban Man",
         "preco": "Disponível",
-        "imagem": "club-de-nuit-urban-man.png"
+        "imagem": "perfumes/club-de-nuit-urban-man.png"
     },
     {
         "nome": "Club de Nuit Urban Elixir",
         "preco": "Disponível",
-        "imagem": "club-de-nuit-urban-elixir.png"
+        "imagem": "perfumes/club-de-nuit-urban-elixir.png"
     },
     {
         "nome": "Club de Nuit Women",
         "preco": "Disponível",
-        "imagem": "club-de-nuit-women.png"
+        "imagem": "perfumes/club-de-nuit-women.png"
     },
     {
         "nome": "Club de Nuit Intense Women",
         "preco": "Disponível",
-        "imagem": "club-de-nuit-intense-women.png"
+        "imagem": "perfumes/club-de-nuit-intense-women.png"
     },
 
     // Outros Árabes
     {
         "nome": "Liquid Brun",
         "preco": "Disponível",
-        "imagem": "liquidbrun.png"
+        "imagem": "perfumes/liquidbrun.png"
     },
     {
         "nome": "Ghost Spectre",
         "preco": "Disponível",
-        "imagem": "ghost-specre.png"
+        "imagem": "perfumes/ghost-specre.png"
     },
     {
         "nome": "Salvo's",
         "preco": "Disponível",
-        "imagem": "salvos.png"
+        "imagem": "perfumes/salvos.png"
     },
 
     // --- HIDRATANTES ---
     {
         "nome": "Hidratante Angel",
         "preco": "Disponível",
-        "imagem": "hidratante-angel.jpg"
+        "imagem": "perfumes/hidratante-angel.jpg"
     },
 
     // --- PERFUMES IMPORTADOS (Designers) ---
     {
         "nome": "One Million's",
         "preco": "Disponível",
-        "imagem": "one-million.png"
+        "imagem": "perfumes/one-million.png"
     },
     {
         "nome": "Jean Paul's",
         "preco": "Disponível",
-        "imagem": "jeanpauls.jpg"
+        "imagem": "perfumes/jeanpauls.jpg"
     },
     {
         "nome": "Sauvage's",
         "preco": "Disponível",
-        "imagem": "sauvages.jpg"
+        "imagem": "perfumes/sauvages.jpg"
     }
 ];
