@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    scroll-behavior: smooth; /* Animação suave ao clicar no menu */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     color: var(--text-color);
 }
 
-/* --- NOVO HEADER (LOGO E MENU) --- */
+/* --- HEADER E MENU --- */
 header {
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ header {
 }
 
 .logo {
-    max-height: 80px; /* Define um tamanho elegante para a logo */
+    max-height: 80px;
     width: auto;
 }
 
@@ -63,10 +63,9 @@ nav a:hover {
     font-size: 2rem;
 }
 
-/* --- GRID E TAMANHO DOS PRODUTOS CORRIGIDOS --- */
+/* --- GRID DE PRODUTOS --- */
 .produtos-grid {
     display: grid;
-    /* Isso impede que 1 único produto ocupe a tela toda */
     grid-template-columns: repeat(auto-fill, minmax(260px, 280px)); 
     gap: 2rem;
     justify-content: center;
@@ -91,7 +90,7 @@ nav a:hover {
 .produto-card img {
     width: 100%;
     height: 250px;
-    object-fit: contain; /* Garante que a foto do perfume não seja cortada */
+    object-fit: contain; 
     background-color: #fff; 
     margin-bottom: 1rem;
 }
@@ -120,7 +119,7 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* --- SEÇÕES EXTRAS --- */
+/* --- SEÇÕES EXTRAS (QUEM SOMOS / CONTATO) --- */
 .secao-info {
     margin-top: 5rem;
     text-align: center;
@@ -129,9 +128,44 @@ nav a:hover {
     border-radius: 8px;
 }
 
+.secao-info h2 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .secao-info p {
     margin-top: 1rem;
     line-height: 1.6;
+}
+
+/* --- REDES SOCIAIS (NOVO) --- */
+.sociais-quem-somos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.link-social {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    gap: 10px;
+    transition: transform 0.3s;
+}
+
+.link-social:hover {
+    transform: translateY(-3px);
+    color: #8c7171;
+}
+
+.link-social img {
+    width: 25px;
+    height: 25px;
 }
 
 /* --- BOTÃO FLUTUANTE WHATSAPP --- */
@@ -154,7 +188,6 @@ nav a:hover {
 .whatsapp-flutuante img {
     width: 35px;
     height: 35px;
-    /* Adicionando um filtro para deixar o ícone branco em vez de preto/verde padrão */
     filter: brightness(0) invert(1);
 }
 
@@ -162,7 +195,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* Responsividade para Celulares */
+/* --- RESPONSIVIDADE (CELULARES) --- */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
