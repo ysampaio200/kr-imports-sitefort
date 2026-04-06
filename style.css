@@ -199,6 +199,8 @@ nav a:hover {
 .link-social img {
     width: 25px;
     height: 25px;
+    background: transparent;
+    display: block;
 }
 
 .whatsapp-flutuante {
