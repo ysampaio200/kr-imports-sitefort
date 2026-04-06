@@ -5,7 +5,7 @@ const produtosData = [
     {
         "nome": "Asad Lattafa",
         "preco": "R$ 250,00",
-        "imagem": "asad.webp"
+        "imagem": "asad.png"
     },
     {
         "nome": "Asad Elixir",
@@ -66,7 +66,7 @@ const produtosData = [
     {
         "nome": "Club de Nuit Urban Elixir",
         "preco": "Disponível",
-        "imagem": "club-de-nuit-urban-elixir.webp"
+        "imagem": "club-de-nuit-urban-elixir.png"
     },
     {
         "nome": "Club de Nuit Women",
@@ -83,7 +83,7 @@ const produtosData = [
     {
         "nome": "Liquid Brun",
         "preco": "Disponível",
-        "imagem": "liquidbrun.jpg"
+        "imagem": "liquidbrun.png"
     },
     {
         "nome": "Ghost Spectre",
@@ -100,7 +100,7 @@ const produtosData = [
     {
         "nome": "Hidratante Angel",
         "preco": "Disponível",
-        "imagem": "hidratante-angel.png"
+        "imagem": "hidratante-angel.jpg"
     },
 
     // --- PERFUMES IMPORTADOS (Designers) ---
