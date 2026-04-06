@@ -12,11 +12,11 @@ const produtosData = [
     {
         "nome": "Club de Nuit Urban Elixir",
         "preco": "Disponível",
-        "imagem": "club-de-nuit-urban-elixir.webp"
+        "imagem": "club-de-nuit-urban-elixir.png"
     },
     {
         "nome": "Liquid Brun",
         "preco": "Disponível",
-        "imagem": "liquidbrun.jpg"
+        "imagem": "liquidbrun.png"
     }
 ];
