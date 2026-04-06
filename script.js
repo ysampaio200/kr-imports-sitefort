@@ -28,4 +28,29 @@ function encomendar(nomeProduto) {
     window.open(url, '_blank');
 }
 
-window.onload = carregarProdutos;
+function configurarTema() {
+    const btnTema = document.getElementById('btn-tema');
+    const corpoSite = document.body;
+
+    if (localStorage.getItem('kr-tema') === 'escuro') {
+        corpoSite.classList.add('tema-escuro');
+        btnTema.innerHTML = '☀️ Claro';
+    }
+
+    btnTema.addEventListener('click', () => {
+        corpoSite.classList.toggle('tema-escuro');
+        
+        if (corpoSite.classList.contains('tema-escuro')) {
+            localStorage.setItem('kr-tema', 'escuro');
+            btnTema.innerHTML = '☀️ Claro';
+        } else {
+            localStorage.setItem('kr-tema', 'claro');
+            btnTema.innerHTML = '🌙 Escuro';
+        }
+    });
+}
+
+window.onload = () => {
+    carregarProdutos();
+    configurarTema();
+};
