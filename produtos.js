@@ -1,12 +1,12 @@
 const produtosData = [
     {
         "nome": "Asad Lattafa",
-        "preco": "R$ 250,00",
-        "imagem": "asad.webp"
+        "preco": "Disponível",
+        "imagem": "asad.png"
     },
     {
         "nome": "Asad Elixir",
-        "preco": "R$ 250,00",
+        "preco": "Disponível",
         "imagem": "elixir.webp"
     },
     {

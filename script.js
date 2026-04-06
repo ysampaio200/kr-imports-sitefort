@@ -32,9 +32,14 @@ function configurarTema() {
     const btnTema = document.getElementById('btn-tema');
     const corpoSite = document.body;
 
-    if (localStorage.getItem('kr-tema') === 'escuro') {
+    const temaSalvo = localStorage.getItem('kr-tema');
+    const prefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (temaSalvo === 'escuro' || (!temaSalvo && prefereEscuro)) {
         corpoSite.classList.add('tema-escuro');
-        btnTema.innerHTML = '☀️ Claro';
+        btnTema.innerHTML = 'Tema Claro';
+    } else {
+        btnTema.innerHTML = 'Tema Escuro';
     }
 
     btnTema.addEventListener('click', () => {
@@ -42,10 +47,10 @@ function configurarTema() {
         
         if (corpoSite.classList.contains('tema-escuro')) {
             localStorage.setItem('kr-tema', 'escuro');
-            btnTema.innerHTML = '☀️ Claro';
+            btnTema.innerHTML = 'Tema Claro';
         } else {
             localStorage.setItem('kr-tema', 'claro');
-            btnTema.innerHTML = '🌙 Escuro';
+            btnTema.innerHTML = 'Tema Escuro';
         }
     });
 }
