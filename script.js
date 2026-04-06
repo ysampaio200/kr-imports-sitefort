@@ -9,10 +9,11 @@ function carregarProdutos() {
     produtosData.forEach(produto => {
         const card = document.createElement('div');
         card.className = 'produto-card';
+        
         card.innerHTML = `
             <img src="${produto.imagem}" alt="${produto.nome}">
             <h3>${produto.nome}</h3>
-            <p class="preco">${produto.preco}</p>
+            <p class="preco" style="color: #28a745; text-transform: uppercase;">Disponível</p>
             <button class="btn-encomendar" onclick="encomendar('${produto.nome}')">
                 Encomendar
             </button>
